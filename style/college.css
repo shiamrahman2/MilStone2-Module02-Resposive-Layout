@@ -11,12 +11,27 @@ img{
 .row > div{
     flex:1;
 }
-.vertical-collage img{
-    height:calc((100%-5px)/2);
+.vertical-collage{
+    /* display:flex;
+    flex-direction:column;
+    height:calc((100%-5px)/2); */
+ display:grid;
+ grid-template-columns: (1,1fr);
+ gap:5px;
+ height:auto;
    
 }
 .square-collage{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
+@media  screen and (max-width:576px) {
+    .row{
+        flex-direction:column;
+        height:auto;
+    }
+    .square-collage{
+        grid-template-columns:1fr;
+    }
 }
