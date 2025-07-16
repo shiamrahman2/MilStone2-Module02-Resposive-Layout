@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Flex</title>
+    <style>
+      .container{
+        display:flex;
+        gap:15px;
+      }
+     .box{
+        background-color: bisque;
+        border:2px solid turquoise;
+        padding:20px;
+        font-size:30px;
+        font-weight:bold;
+        border-radius:16px;
+     }
+     .container2{
+        display:flex;
+        gap:13px;
+        margin-top:20px;
+        flex-wrap:wrap;
+     }
+     .items{
+        font-weight:bold;
+        font-size:40px;
+        border:5px dotted red;
+        height:150px;
+        width:150px;
+     }
+     @media screen and (max-width:576px)
+     {
+        .container{
+            flex-direction:column;
+            gap:30px;
+        }
+     }
+    </style>
+</head>
+<body>
+    <h3>Felxible Flex</h3>
+    <div class="container">
+        <div class="box">
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima odit perferendis, temporibus officiis, voluptatum odio ullam, cum laudantium qui excepturi cumque modi voluptates aut quisquam quas debitis recusandae tempora eligendi?</p>
+        </div>
+        <div class="box">
+           <p->Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem, veniam eum, at soluta animi mollitia optio iure, assumenda numquam iste? Perferendis magni quaerat quidem, nulla corrupti quis incidunt vel!</p->
+        </div>
+    </div>
+    <div class="container2">
+        <div class="items">items-1</div>
+        <div class="items">items-2</div>
+        <div class="items">items-3</div>
+        <div class="items">items-4</div>
+        <div class="items">items-5</div>
+        <div class="items">items-6</div>
+        <div class="items">items-7</div>
+        <div class="items">items-8</div>
+        <div class="items">items-9</div>
+        <div class="items">items-10</div>
+    </div>
+</body>
+</html>
